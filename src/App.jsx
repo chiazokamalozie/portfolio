@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import charityImg from './assets/Portfolioimages/charityevent.jpg';
-import litterImg from './assets/Portfolioimages/litterpicking.jpg';
-import easterImg2 from './assets/Portfolioimages/easterassembly2.jpg';
+import charityImg from '../assets/Portfolioimages/charityevent.jpg';
+import litterImg from '../assets/Portfolioimages/litterpicking.jpg';
+import easterImg2 from '../assets/Portfolioimages/easterassembly2.jpg';
 import mesGroup1 from './assets/Portfolioimages/mesgroup.JPG';
-import mesGroup2 from './assets/Portfolioimages/Mes2.jpg';
-import easterVideo from './assets/Portfolioimages/easterassemblyvideo.mp4';
-import careHomeImg from './assets/Portfolioimages/carehomeservice.jpg';
-import igniteKidsImg from './assets/Portfolioimages/igniteKidsyouthgroup.jpg';
-import christmasImg from './assets/Portfolioimages/christmasassembly.jpg';
-import easterImg1 from './assets/Portfolioimages/easterassembly.jpg';
-import cvFile from './assets/cv/chiaz alozie.docx?url';
+import mesGroup2 from '../assets/Portfolioimages/Mes2.jpg';
+import easterVideo from '../assets/Portfolioimages/easterassemblyvideo.mp4';
+import careHomeImg from '../assets/Portfolioimages/carehomeservice.jpg';
+import igniteKidsImg from '../assets/Portfolioimages/igniteKidsyouthgroup.jpg';
+import christmasImg from '../assets/Portfolioimages/christmasassembly.jpg';
+import easterImg1 from '../assets/Portfolioimages/easterassembly.jpg';
+import cvFile from '../assets/cv/chiaz alozie.docx?url';
 import { 
   Briefcase, 
   GraduationCap, 
