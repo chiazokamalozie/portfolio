@@ -9,6 +9,7 @@ import careHomeImg from './assets/Portfolioimages/carehomeservice.jpg';
 import igniteKidsImg from './assets/Portfolioimages/igniteKidsyouthgroup.jpg';
 import christmasImg from './assets/Portfolioimages/christmasassembly.jpg';
 import easterImg1 from './assets/Portfolioimages/easterassembly.jpg';
+import cvFile from './assets/cv/chiaz alozie.docx?url';
 import { 
   Briefcase, 
   GraduationCap, 
