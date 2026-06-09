@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import charityImg from '../assets/Portfolioimages/charityevent.jpg';
+import charityImg from '/assets/Portfolioimages/charityevent.jpg';
 import litterImg from '../assets/Portfolioimages/litterpicking.jpg';
 import easterImg2 from '../assets/Portfolioimages/easterassembly2.jpg';
 import mesGroup1 from './assets/Portfolioimages/mesgroup.JPG';
