@@ -5,7 +5,7 @@ import easterImg2 from '../assets/Portfolioimages/easterassembly2.jpg';
 import mesGroup1 from './assets/Portfolioimages/mesgroup.JPG';
 import mesGroup2 from '../assets/Portfolioimages/Mes2.jpg';
 import easterVideo from '../assets/Portfolioimages/easterassemblyvideo.mp4';
-import careHomeImg from '../assets/Portfolioimages/carehomeservice.jpg';
+import careHomeImg from 'src/assets/Portfolioimages/carehomeservice.jpg';
 import igniteKidsImg from '../assets/Portfolioimages/igniteKidsyouthgroup.jpg';
 import christmasImg from '../assets/Portfolioimages/christmasassembly.jpg';
 import easterImg1 from '../assets/Portfolioimages/easterassembly.jpg';
