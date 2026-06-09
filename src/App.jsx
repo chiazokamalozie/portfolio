@@ -93,7 +93,7 @@ const Portfolio = () => {
             <button onClick={() => scrollToSection('gallery')} className="flex items-center gap-2 bg-white/10 text-white border border-white/20 px-8 py-4 rounded-full font-bold transition-all hover:bg-white/20 hover:scale-105 backdrop-blur-sm">
               See Moments in Action
             </button>
-            <a href="chiaz alozie.docx" download="Chiazokam_Alozie_CV.docx" className="flex items-center gap-2 bg-amber-500/10 text-amber-400 border border-amber-500/40 px-8 py-4 rounded-full font-bold transition-all hover:bg-amber-500 hover:text-slate-950 hover:scale-105 backdrop-blur-sm">
+            <a href={cvFile} download="Chiazokam_Alozie_CV.docx" className="flex items-center gap-2 bg-amber-500/10 text-amber-400 border border-amber-500/40 px-8 py-4 rounded-full font-bold transition-all hover:bg-amber-500 hover:text-slate-950 hover:scale-105 backdrop-blur-sm">
               <Download size={18} /> Download CV
             </a>
           </div>
@@ -261,56 +261,60 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-4">Moments in <span className="text-amber-500">Action</span></h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">A visual journey of community engagement, youth mentorship, and impactful events. <br/><span className="text-xs text-amber-500/70">(Images will automatically appear once files are added to the folder)</span></p>
+            <p className="text-slate-400 max-w-2xl mx-auto">A visual journey of community engagement, youth mentorship, and impactful events.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 auto-rows-[250px]">
             
-            {/* 1x Charity Picture */}
+            {/* Charity Event */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 md:col-span-2 lg:col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/charityevent.jpg" alt="Charity Event" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1593113565214-80af34bf9919?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={charityImg} alt="Charity Event" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Charity Event</h3>
                 <p className="text-sm text-amber-400 mt-1">Community Outreach</p>
               </div>
             </div>
 
-            {/* 2x Buckden Tower's Residential */}
+            {/* Litter Picking */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/litterpicking.jpg" alt="Buckden Tower's Residential" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1544413660-299165566b1d?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={litterImg} alt="Litter Picking" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Litter Picking</h3>
                 <p className="text-sm text-amber-400 mt-1">Community Clean-up</p>
               </div>
             </div>
+
+            {/* Easter Assembly 2 */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/easterassembly2.jpg" alt="Buckden Tower's Residential" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1544413660-299165566b1d?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={easterImg2} alt="Easter Assembly" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Easter Assembly</h3>
                 <p className="text-sm text-amber-400 mt-1">Picture 2</p>
               </div>
             </div>
 
-            {/* 2x MES Group Picture */}
+            {/* MES Group 1 */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 md:col-span-2 xl:col-span-1 border border-white/10">
-              <img src="\src\assets\Portfolioimages\mesgroup.JPG" alt="MES Group" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1529156069898-49953eb1f5f6?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={mesGroup1} alt="MES Group" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">MES Group</h3>
                 <p className="text-sm text-amber-400 mt-1">Picture 1</p>
               </div>
             </div>
+
+            {/* MES Group 2 */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/Mes2.jpg" alt="MES Group" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1529156069898-49953eb1f5f6?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={mesGroup2} alt="MES Group" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">MES Group</h3>
                 <p className="text-sm text-amber-400 mt-1">Picture 2</p>
               </div>
             </div>
 
-            {/* 1x Easter Assembly Video (Takes up more space) */}
+            {/* Easter Assembly Video */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 md:col-span-2 lg:col-span-2 row-span-1 lg:row-span-2 border border-white/10 shadow-[0_0_30px_rgba(245,158,11,0.2)]">
               <video 
-                src="/src/assets/Portfolioimages/easterassemblyvideo.mp4" 
+                src={easterVideo}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 controls
                 playsInline
@@ -323,34 +327,36 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* 1x Care Home Service */}
+            {/* Care Home Service */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/carehomeservice.jpg" alt="Care Home Service" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={careHomeImg} alt="Care Home Service" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Care Home</h3>
                 <p className="text-sm text-amber-400 mt-1">Service</p>
               </div>
             </div>
 
-            {/* 1x Christmas Assembly at Redwell */}
+            {/* Ignite Kids Youth Group */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/igniteKidsyouthgroup.jpg" alt="Christmas Assembly" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={igniteKidsImg} alt="Ignite Kids Youth Group" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Ignite Kids Youth Group</h3>
                 <p className="text-sm text-amber-400 mt-1">Redwell</p>
               </div>
             </div>
 
-            {/* 2x Easter Assembly Pictures */}
+            {/* Christmas Assembly */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/christmasassembly.jpg" alt="Christmas Assembly 1" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1544413660-299165566b1d?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={christmasImg} alt="Christmas Assembly" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Christmas Assembly</h3>
                 <p className="text-sm text-amber-400 mt-1">Group Picture 1</p>
               </div>
             </div>
+
+            {/* Easter Assembly 1 */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src="/src/assets/Portfolioimages/easterassembly.jpg" alt="Easter Assembly 2" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1544413660-299165566b1d?auto=format&fit=crop&w=400&q=80'; }} />
+              <img src={easterImg1} alt="Easter Assembly" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Easter Assembly</h3>
                 <p className="text-sm text-amber-400 mt-1">Group Picture 2</p>
@@ -424,7 +430,7 @@ const Portfolio = () => {
               <Phone className="text-amber-500" size={20}/>
               +44 7340 696740
             </a>
-            <a href="src\assets\cv\chiaz alozie.docx" download="Chiazokam_Alozie_CV.docx" className="flex items-center justify-center gap-3 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 px-6 py-4 rounded-2xl transition-colors text-amber-400 font-medium shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+            <a href={cvFile} download="Chiazokam_Alozie_CV.docx" className="flex items-center justify-center gap-3 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 px-6 py-4 rounded-2xl transition-colors text-amber-400 font-medium shadow-[0_0_15px_rgba(245,158,11,0.1)]">
               <Download className="text-amber-500" size={20}/>
               Download CV
             </a>
