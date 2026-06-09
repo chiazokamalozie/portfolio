@@ -5,7 +5,7 @@ import easterImg2 from '../assets/Portfolioimages/easterassembly2.jpg';
 import mesGroup1 from './assets/Portfolioimages/mesgroup.JPG';
 import mesGroup2 from '../assets/Portfolioimages/Mes2.jpg';
 import easterVideo from '../assets/Portfolioimages/easterassemblyvideo.mp4';
-import careHomeImg from 'src/assets/Portfolioimages/carehomeservice.jpg';
+import careHomeImg from '..assets/Portfolioimages/carehomeservice.jpg';
 import igniteKidsImg from '../assets/Portfolioimages/igniteKidsyouthgroup.jpg';
 import christmasImg from '../assets/Portfolioimages/christmasassembly.jpg';
 import easterImg1 from '../assets/Portfolioimages/easterassembly.jpg';
@@ -329,7 +329,7 @@ const Portfolio = () => {
 
             {/* Care Home Service */}
             <div className="group relative rounded-3xl overflow-hidden bg-slate-800 col-span-1 border border-white/10">
-              <img src='src/assets/Portfolioimages/carehomeservice.jpg' alt="Care Home Service" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src='..assets/Portfolioimages/carehomeservice.jpg' alt="Care Home Service" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Care Home</h3>
                 <p className="text-sm text-amber-400 mt-1">Service</p>
